@@ -14,7 +14,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/products', require('./routes/products'));
 app.use('/api/orders', require('./routes/orders'));
 
-const MONGO_URI = "mongodb://localhost:27017/organicstore";
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/organicstore";
 const PORT = 3000;
 
 mongoose.connect(MONGO_URI)
