@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Store 🌿</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌱 Organic Store</h1>
+    <nav>
+      <button onclick="showCategory('kitchen')">Kitchen</button>
+      <button onclick="showCategory('bodycare')">Body Care</button>
+      <button onclick="showCategory('stationery')">Stationery</button>
+      <button onclick="viewCart()">🛒 Cart</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="productSection" class="hidden"></section>
+    <section id="cartSection" class="hidden"></section>
+  </main>
+
+  <footer>
+    <p>🌿 Thank you for supporting organic living 🌿</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

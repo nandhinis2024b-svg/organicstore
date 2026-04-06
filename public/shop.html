@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Organic Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">🌱 Organic Store</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="shop">
+    <h2>Shop by Category</h2>
+    <div class="categories">
+      <button onclick="showCategory('kitchen')">Kitchen</button>
+      <button onclick="showCategory('bodycare')">Body Care</button>
+      <button onclick="showCategory('stationery')">Stationery</button>
+    </div>
+
+    <div id="product-list" class="products"></div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart">
+    <h2>Your Cart</h2>
+    <div id="cart-list"></div>
+    <button id="checkout-btn">Checkout</button>
+  </section>
+
+  <!-- Receipt Section -->
+  <section class="receipt">
+    <div id="receipt"></div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

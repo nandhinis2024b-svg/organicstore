@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Store Login</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #1e5631; /* dark green */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .login-box {
+    background-color: #b5e7a0; /* baby green */
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
+
+  .logo {
+    font-size: 50px;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    color: #1e5631;
+  }
+
+  input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  button {
+    background-color: #1e5631;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #b5e7a0;
+  }
+
+  button:hover {
+    background-color: #145a32;
+    box-shadow: 0 0 20px #a3e4a3;
+    transform: scale(1.05);
+  }
+
+  footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #2e7d32;
+  }
+</style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="logo">🌱</div>
+    <h2>Welcome to Organic Store</h2>
+    <input type="text" id="username" placeholder="Enter your name"><br>
+    <input type="password" id="password" placeholder="Enter password"><br>
+    <button onclick="login()">Login</button>
+
+    <footer>Grow Green. Live Organic. 🌿</footer>
+  </div>
+
+  <script>
+    function login() {
+      let name = document.getElementById("username").value;
+      let pass = document.getElementById("password").value;
+      if(name && pass){
+        	window.location.href = "home.html";
+      } else {
+        alert("Please enter both name and password");
+      }
+    }
+  </script>
+</body>
+</html>
